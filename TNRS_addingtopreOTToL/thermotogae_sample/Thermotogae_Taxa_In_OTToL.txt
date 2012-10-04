@@ -1,0 +1,14 @@
+UID,Taxon,parent
+101689714,Thermotogaceae,Thermotogales
+101689715,Fervidobacterium,Thermotogaceae
+100119474,Geotoga,Thermotogaceae
+101973174,Kosmotoga,Thermotogaceae
+100717484,Marinitoga,Thermotogaceae
+101363910,Mesotoga,Thermotogaceae
+100119472,Petrotoga,Thermotogaceae
+101264760,Thermopallium,Thermotogaceae
+100717507,Thermosipho,Thermotogaceae
+100119478,Thermotoga,Thermotogaceae
+101689716,Thermotogae,Bacteria
+101689716,Thermotogae,Bacteria
+100000003,Bacteria,cellular organisms

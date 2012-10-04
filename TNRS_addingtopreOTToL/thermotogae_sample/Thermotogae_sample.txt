@@ -1,0 +1,20 @@
+# TARGET GROUP = Thermotogae
+# AUTHOR = Kristen Swithers and Laura Katz
+# SOURCE = this is taxonomy based in part on NCBI and the Oceanotoga (Jayasinghearachchi, H. S. and B. Lal (2011). "Oceanotoga teriensis gen. nov., sp. nov., a thermophilic bacterium isolated from offshore oil-producing wells." 
+#International journal of systematic and evolutionary microbiology 61(Pt 3): 554-560.) and Defluviitoga (Ben Hania, W., R. Godbane, et al. (2012). "Defluviitoga tunisiensis gen. nov., sp. nov., a thermophilic bacterium isolated 
+#from a mesothermic and anaerobic whey digester." International journal of systematic and evolutionary microbiology 62(Pt 6): 1377-1382.) were determined from their characterization papers
+
+Defluviitoga	Thermotogaceae
+Fervidobacterium	Thermotogaceae
+Geotoga	Thermotogaceae
+Kosmotoga	Thermotogaceae
+Marinitoga	Thermotogaceae
+Mesotoga	Thermotogaceae
+Oceanotoga	Thermotogaceae
+Petrotoga	Thermotogaceae
+Thermopallium	Thermotogaceae
+Thermosipho	Thermotogaceae
+Thermotoga	Thermotogaceae
+Thermotogaceae	Thermotgales
+Thermotgales	Thermotogae
+Thermotogae	Bacteria

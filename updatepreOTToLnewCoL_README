@@ -1,0 +1,51 @@
+updateOTToLnewCoL_README
+
+1) Download new col from http://gnaclr.globalnames.org/classification/20
+
+2) Unzip and leave col folder in directory wit the script and a copy of the latest OTToL
+
+3) Run script as python updateOTToLnewCoL.py
+
+The script will do a number of things, including making files that will not be needed, files that 
+will need to be checked and a new OTToL with the non-duplicate, non-homonym species with genera
+and genera with families.
+
+
+Run on 080912 and it took ~3hours
+
+
+
+
+
+
+
+Step 1: Parsing and renaming CoL data
+
+provisionallyAcceptedNames and acceptedNames parsed from col taxa.txt
+viruses_and_other_prblems: lines that had trouble being renames with our taxonomy--mostly either viruses or hybrids
+taxa_provisionallyAcceptedNames and taxa_acceptedNames renamed with accepted higher taxonomy
+allCoLrenamed_taxa the two files above concatenated
+errorlog - catches errors in major clade/next level taxonomy issues.  So far, hasn't gotten anything but should be checked
+
+Step 2) Finding species to enter, species already in CoL, species that can't be entered for a different reason 
+
+new_sp_2add2OTToL
+already_in:lines from species already in OTToL
+error_entering: lines that can't be entered - mostly hybrids or subspecies
+
+Step 3) Merging species - then genera - then species again
+
+first pass species outputs 	
+	to_merge (first pass species)
+	Not Assigned (any lines with Not Assigned--to add later in a different way?)
+	genera_2add2OTToL
+	
+second pass genera - takes genera_2add2OTToL and adds genera - output
+stillNotinOTToL - taxa not added because families not found
+to_merge - species from above + genera to be added.
+
+Pass 'to_merge' to the add function.  This finds whether any of the species and genera to be added are already in or are homonyms.
+If they are, they are written out to a separate file to be looked at, either dups_2check_before_adding2_OTToL080912v2+to_merge or
+homonyms_2check_before_adding2_OTToL080912v2+to_merge.
+
+Main output is toAdd_OTToL080912v2+to_merge which gets concatenated to the OTToL and then goes back to merge the remaining species.
